@@ -26,15 +26,25 @@ body {
   margin: 0 auto;
 }
 
+.bigcontainer img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.textcontainer {
+  margin-bottom: 2rem;
+}
+
 .textcontainer p {
   font-size: 15px;
   text-align: center;
   margin: 10px 0 10px 0;
-  color: var(--light-gray);
+  color: var(--grayish-blue);
 }
 
-.textcontainer strong {
-  color: black;
+.textcontainer h1 {
+  font-size: 20px;
+  color: var(--dark-blue);
 }
 
 #text2 {
