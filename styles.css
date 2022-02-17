@@ -1,25 +1,40 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
 body {
-  background-color: rgba(175, 210, 233, 0.89);
+  background-color: var(--light-gray);
+  font-family: "Outfit", sans-serif;
 }
 
 .bigcontainer {
   text-align: center;
-  font-family: outfit;
   background-color: hsl(0, 0%, 100%);
   border: 2px groove transparent;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
   padding: 15px;
-  width: 40vh;
-  height: 60vh;
-  margin: auto;
-  position: relative;
-  top: 100px;
+  width: 250px;
+  max-width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
 }
 
-.textcontainer {
-  font-size: 1.3em;
+.textcontainer p {
+  font-size: 15px;
   text-align: center;
+  margin: 10px 0 10px 0;
+  color: var(--light-gray);
+}
+
+.textcontainer strong {
+  color: black;
 }
 
 #text2 {
@@ -33,6 +48,7 @@ body {
   position: relative;
   top: 110px;
   text-align: center;
+  visibility: hidden;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
